@@ -1,0 +1,156 @@
+body {
+	
+	
+	margin: 0;
+	padding: 0;
+	/* background: #262626; */
+	background: white;
+}
+ div .containerSubPic {
+position: relative;
+    height: 80px;
+    width: 1500;
+ }
+
+.section1 {
+	
+     /* position: absolute; 
+	 top: 50%;
+	left: 50%;  
+	transform: translate(-50%, -50%); positions  the element using the translate 50% to the right and 50% higher. */
+	
+    /* width: 100%;  */
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+	
+	background: #000; 
+	
+}
+
+@media only screen and (min-width: 750px) {
+    .section1{
+    height: 400px;
+    width: 1200px; 
+    display: flex;
+    box-shadow: 0 25px 30px rgba(0,0,0,.5);
+    }
+}
+.content {
+	
+	width: calc(50%  - 50px);
+	height: 100%;
+	background: #000; 
+	
+	box-sizing: border-box;
+	padding: 10px 30px;
+	font-family: san-serif;
+	font-size: 1em;
+	color: white;
+}
+
+.imagebox {
+	
+	width: calc(50%  + 50px);
+	height: 100%;
+	background: #f00;
+	box-sizing: border-box;
+	border-left: 100px solid #000 ;
+	border-bottom: 400px solid transparent;
+	background: url(../images/subtermite_900x600.jpg) ;
+	background-position: -100px -150px;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+.site div:nth-child(even) {
+    background-color: #9abff9;
+}
+.site div:nth-child(odd) {
+    background-color: rgb(214, 209, 209);
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(25px,auto);
+    grid-template-areas:
+   
+    "section-a section-a section-a"
+    "section-b section-b section-b"
+    "termite-pics termite-pics termite-pics";
+ 
+    grid-gap: 5px;
+}
+.site div {
+    padding: 30px;
+}
+
+
+
+
+.section-a {
+    grid-area: section-a;
+    align-self: center;
+    text-align: center;
+}
+
+.termite-pics {
+
+grid-area: termite-pics;
+
+grid-template-areas: 
+"pic-1"
+"pic-2"
+"pic-3";
+grid-gap: 5px;
+}
+
+
+.pic-1 {
+    grid-area: pic-1;
+    background: url(../images/subtermite_closer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.pic-2 {
+    grid-area: pic-2;
+    background: url(../images/tunnelUpWall.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pic-3 {
+    grid-area: pic-3;
+    background: url(../images/wood_damage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 736px) {
+.site{
+    display: grid;
+    grid-template-columns: 1fr 300px 400px 1fr  1fr; 
+grid-template-areas: 
+". section-a section-a section-a ."
+". termite-pics termite-pics termite-pics .";
+
+
+}
+
+.termite-pics{
+    display: grid;
+    grid-area: termite-pics;
+    grid-template-areas: 
+    "pic-1 pic-1 pic-2"
+    "pic-1 pic-1 pic-2"
+    "pic-3 pic-3 pic-3"
+    "pic-3 pic-3 pic-3";
+}
+}

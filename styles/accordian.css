@@ -1,0 +1,14 @@
+.ui-widget {
+    margin-bottom: 25px;
+    
+}
+
+.ui-widget-content a{
+ color: blue;
+}
+.ui-widget-content p {
+    text-align: left;
+}
+/* .ui-button {
+    background-color: #2D2B72;
+} */

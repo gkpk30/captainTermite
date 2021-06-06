@@ -1,0 +1,199 @@
+
+.mobilebanner {
+	display: block; background-color: #2D2B72; clear: both; 
+	min-height:74px; color: white; text-align: center; 
+		}
+.mobilebanner h4 ,h5
+ {
+	 margin: 8px;
+ }	
+	#bannerLogo{ margin-left: 15px;}
+	#bannerEstimate{margin-top: 0px; padding-top:5px; font-family: Arial, Helvetica, sans-serif; 
+	font-size: 1.15em; font-weight: bold;}
+	#bannerPhone{ font-family: Arial, Helvetica, sans-serif; 
+	font-size: 1.15em; font-weight: bold;}
+	#bannerHours{margin-bottom:0px; padding-bottom: 5px; font-weight: bold;}
+
+
+
+
+@media only screen and (min-width: 800px) {
+	
+	.mobilebanner {display: none;}
+	
+}
+
+@media only screen and (min-width: 1400px) {
+.mainContainer {
+    max-width: 1800px !important;
+}
+}
+  
+  .bg-grey{
+	background-color: #f6f6f6;	
+}
+  
+  
+ 
+	  
+.parallaxContainerSigns {
+	width:100%;
+	/* max-width: 1000px; */
+	margin: 0 auto;
+	/* background: #b6d3fe; */
+	font-size: 1rem;
+	padding: 25px;	
+}
+
+.parallaxSigns {
+	background: url(../images/wood_damage.jpg) no-repeat center ;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 400px; 
+	color: white;	
+}
+
+@media only screen and (max-width:700px){
+	.parallaxSigns{
+		background-attachment: scroll;
+		background-size: auto;
+	}
+}
+	  
+.parallaxContainer {
+	width:100%;
+	/* max-width: 1000px; */
+	margin: 0 auto;
+	/* background: #b6d3fe; */
+	font-size: 30px;
+	padding: 25px;	
+}
+
+.parallax {
+	background: url(../images/subtermite_900x600.jpg) no-repeat center ;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 300px;
+	color: white;	
+}
+
+@media only screen and (max-width:700px){
+	.parallax{
+		background-attachment: scroll;
+		background-size: auto;
+	}
+}
+.align li {
+	text-align: left;
+}
+
+.button {
+	display: inline-block;
+	background-color: rgb(129, 118, 233);
+	
+}
+.button a {
+	text-decoration: none;
+    padding: 2px;
+	color: white;
+	text-align: center;
+}
+/**********************************Treatment Menu on side **********************  */
+#treatment_menu ul {
+	display:block;
+	/* border-color: #ece6e6; */
+	border-color: #b6d3fe;
+    border-style: double;
+    border-radius: 25px;
+	margin-bottom: 25px;
+	float: none;
+}
+	#treatment_menu	ul li{
+	 list-style-type: none;
+}
+
+#treatment_menu	ul li a {
+	list-style-type: none;
+	display: block;
+	margin: auto;
+    width: 90%;
+    border: 3px solid white;
+	background-color: rgba(77, 73, 73, 0.7);
+	/*background-color: #3399cc;*/
+	color: #b6d3fe;
+    font-weight: bold;
+    padding: 10px;
+	text-decoration: none;
+	font-size: 2.3 rem;
+}
+#treatment_menu li a:hover {
+    background-color: #9abff9;
+    color:#2D2B72;
+}
+.fontLogo{ 
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  letter-spacing: .07em;
+  
+   }
+   
+   
+   
+   
+   /********************  What to expect ************************************/
+ 
+ .timeline {
+	 width: 100%;;
+	 height: auto;
+	 margin: 5px auto 0;
+	 padding: 0px;
+	 box-sizing: border-box;
+	 display: block;
+	 float: none;
+	 
+	 
+ }
+  .timeline li {
+	 
+		position: relative;
+		list-style: none;
+		text-align:left;
+			  
+  }
+  
+  .timeline li .item {
+	  position: relative;
+	  min-height: 60px;
+	  padding: 0 20px 20px 30px;
+	  background:transparent;
+	  margin-left: 20px;
+	  border-left: 3px solid  #b6d3fe;
+  }
+ 
+ 
+ .timeline li:last-child .item {
+	 
+	 border-left: 1px solid transparent;
+	 
+ }
+ 
+ 
+ .timeline li .item span {
+	 
+	 position: absolute;
+	 top: -8px;
+	 left: -20px;
+	 width: 40px;
+	 height: 40px;
+	 line-height: 40px;
+	 text-align: center;
+	 background: #b6d3fe ;
+	 color: #fff;
+	 font-weight: 700;
+	 border-radius: 50%;
+	 	 
+ }
+ 
+ 
+ /*************************************************************************/
+
